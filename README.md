@@ -48,7 +48,7 @@ The documentation and diagrams were drafted with Claude (Anthropic) and checked 
 
 ## Credits and references
 
-- Jasmin SMS Gateway (jookies/jasmin), version 0.11.0 used here: https://github.com/jookies/jasmin, documentation https://docs.jasminsms.com. This repository only runs the published Docker image `jookies/jasmin`. The Compose file is adapted from the one in the Jasmin repository.
+- Jasmin SMS Gateway (jookies/jasmin, Apache License 2.0), version 0.11.0 used here: https://github.com/jookies/jasmin, documentation https://docs.jasminsms.com. This repository only runs the published Docker image `jookies/jasmin`. The Compose file is adapted from the one in the Jasmin repository.
 - SMPPSim by Selenium Software, version 2.6.3 used here, licensed under the GPL. This repository does not include or redistribute it: it only runs the Docker image `jookies/smppsim`, which Jasmin's own repository also references as a provided SMPP simulator.
 - Docker Compose documentation: https://docs.docker.com/compose and the `docker compose down` reference.
 - RabbitMQ: https://www.rabbitmq.com
@@ -57,4 +57,6 @@ The documentation and diagrams were drafted with Claude (Anthropic) and checked 
 
 ## License
 
-Not chosen yet.
+Copyright 2026 Jose de Jesus Agustin Gonzalez. Licensed under the Apache License, Version 2.0: see [LICENSE](LICENSE).
+
+`docker-compose.yml` is adapted from the compose file of Jasmin (Copyright 2014-2016 Jookies LTD, also Apache License 2.0). The changes are listed at the top of that file. SMPPSim (GPL) is not part of this repository.

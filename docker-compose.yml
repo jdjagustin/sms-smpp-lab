@@ -1,5 +1,6 @@
 # Lab compose file for Jasmin SMS gateway + its supporting services.
 # Adapted from the official docker-compose.yml in https://github.com/jookies/jasmin
+# (Jasmin: Copyright 2014-2016 Jookies LTD, Apache License 2.0). This file is also under Apache License 2.0, see LICENSE.
 # Changes vs. the official file (which is meant for developing Jasmin itself):
 #   - jasmin uses the published image instead of building from source
 #   - platform pinned to linux/amd64 (the published image has no arm64 build)
