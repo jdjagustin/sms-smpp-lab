@@ -33,7 +33,7 @@ Do not run `docker compose down -v`: `-v` also deletes the volume that holds the
 
 ## Security note
 
-All published ports are bound to `127.0.0.1` only. The credentials in the docs are Jasmin defaults or throwaway lab values. Do not reuse them anywhere else and do not expose these ports to a network.
+All published ports are bound to `127.0.0.1` only. The credentials in the docs are defaults of Jasmin and SMPPSim or throwaway lab values. Do not reuse them anywhere else and do not expose these ports to a network.
 
 ## Documentation
 
@@ -44,7 +44,7 @@ All published ports are bound to `127.0.0.1` only. The credentials in the docs a
 
 ## AI assistance
 
-The documentation and diagrams were drafted with Claude (Anthropic) and reviewed and run by the author in a real lab. The SVG diagrams were edited after generation, so any content-credentials metadata they originally carried was removed because it no longer matched the files.
+The documentation and diagrams were drafted with Claude (Anthropic) and checked and run by the author on a local machine. The SVG diagrams were edited after generation, so any content-credentials metadata they originally carried was removed because it no longer matched the files.
 
 ## Credits and references
 

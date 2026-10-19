@@ -1,6 +1,6 @@
 # Jasmin setup: configuring the gateway with jCli
 
-This page records, step by step, how the lab gateway was configured. Every command and output below was typed and observed in this lab (Jasmin 0.11.0, SMPPSim 2.6.3, 2026-10-18). Nothing here was copied from memory of other setups.
+This page records, step by step, how the lab gateway was configured. The commands and the outputs shown in the code blocks were typed and observed in this lab (Jasmin 0.11.0, SMPPSim 2.6.3, 2026-10-18). The text around them is explanation: it comes from the Jasmin documentation or from general Docker and SMPP knowledge, and it was not tested separately here.
 
 > The credentials in this page (`jcliadmin`/`jclipwd`, `lab_user`/`lab_pass`, `smppclient1`/`password`) are defaults or throwaway values for a lab whose ports are published only on `127.0.0.1`. Do not reuse them anywhere else.
 
@@ -27,7 +27,7 @@ jCli listens on port 8990, published on `127.0.0.1`.
 nc 127.0.0.1 8990
 ```
 
-`nc` (netcat) opens a plain TCP connection. Jasmin asks for a username and a password (defaults in the Jasmin image: `jcliadmin` / `jclipwd`). The welcome banner reads `Welcome to Jasmin 0.11.0 console`.
+`nc` (netcat) opens a plain TCP connection. Jasmin asks for a username and a password (the defaults documented by Jasmin, `jcliadmin` / `jclipwd`, worked in this lab). The welcome banner reads `Welcome to Jasmin 0.11.0 console`.
 
 Note: with `nc`, the terminal echoes what you type and jCli echoes it back too, so lines can appear twice.
 
@@ -54,7 +54,7 @@ jcli : user -a
 Successfully added User [lab_user] to Group [lab]
 ```
 
-`user -l` then shows `lab_user`, group `lab`, and `ND (!)` under Balance and under MT SMS. `ND` means no data. `(!)` is only an attention marker: balance and SMS count are not set because the lab does not use billing. It is not an error.
+`user -l` then shows `lab_user`, group `lab`, and `ND (!)` under Balance and under MT SMS. `ND` means no data: those values are not set. `(!)` is only an attention marker (we checked this in Jasmin's source code), not an error.
 
 ## 4. Create the connector to SMPPSim
 
